@@ -48,7 +48,7 @@ Only NFT holders can **propose**, **vote**, and **execute** DAO decisions—idea
 
 ## 🏗️ Architecture
 
-```mermaid
+mermaid
 flowchart LR
     subgraph NFTAccessDAO
       direction TB
@@ -56,7 +56,7 @@ flowchart LR
       U -->|createProposal()/vote()/execute()| G[GovernanceFacet]
     end
 
-    subgraph Frontend
+  subgraph Frontend
       direction TB
       F[React/Vue App] -->|reads events| E[TheGraph / Web3]
       F -->|writes txs| NFTAccessDAO
